@@ -1,4 +1,48 @@
-
+#trafficTop{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100px;
+    width: 25px;
+    background-color: black;
+}
+.box{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+#redLight{
+    background-color: red;
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+#yellowLight{
+    background-color: yellow;
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+#greenLight{
+    background-color: green;
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+.container{
+    height: 325px;
+    width: 125px;
+    background-color: black;
+    padding-top:10px;
+}
+.selected {
+    box-shadow: 0 0 20px 10px #fff, 0 0 20px 20px #fff, 0 0 20px 30px #fff;
+    opacity: 1;
+}
+.light:not(.selected){
+    opacity: 0.5;
+}
 /* 
 
     You can write your own styles here...
